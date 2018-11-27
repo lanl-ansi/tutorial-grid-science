@@ -26,46 +26,26 @@ git clone https://github.com/lanl-ansi/tutorial-grid-science-2019
 
 ### Open Julia
 
-Now open Julia.
- - If you are familiar with a terminal, run
- ```
- julia --project=/path/to/tutorial-grid-science-2019
- ```
- - If you are not familiar with a terminal, open Julia, and then run
- ```julia
- julia> cd("/path/to/tutorial-grid-science-2019")
+Now open Julia, either by typing `julia` at a terminal, or from where ever you installed it. Once open, you should be faced with the Julia *REPL* that looks like this:
 
- julia> import Pkg
+![Julia REPL](assets/repl.png)
 
- julia> Pkg.activate(".")
- ```
+### Install Jupyter
 
-### Prepare Julia
-
-Once Julia is open, update your packages as follows:
- ```julia
- import Pkg
- Pkg.update()
-
- ```
-
-Because Julia is just-in-time compiled (more on this in the tutorial), the first time you use some Julia code it needs to perform some compilation. To get this out of the way, run
+Now we need to install [Jupyter](http://jupyter.org/).
+In the Julia REPL, run the following commands (this may take a little bit of time):
 ```julia
-using JuMP
-using GLPK
-using Ipopt
-using IJulia
+import Pkg
+Pkg.add("IJulia")
+Pkg.build("IJulia")
 ```
-
-!!! note
-  If `using IJulia` fails, run `Pkg.build("IJulia")`, then close Julia and re-open following the steps above.
 
 ### Open a Jupyter notebook
 
-Okay, last step, let's launch a Jupyter notebook! Open Julia by following the instructions in the [Open Julia](#open-julia) section. Then run:
+Okay, last step, let's launch a Jupyter notebook! Open a Julia REPL and then run:
 ```julia
 using IJulia
-IJulia.notebook(dir=".")
+IJulia.notebook(dir="/path/to/tutorial-grid-science-2019")
 ```
 
 If all goes well, a browser window will open that looks like this:
