@@ -82,6 +82,12 @@ git-tree-sha1 = "fd8611745ac49689673fce6714893b3cd2301ab5"
 uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 version = "0.8.3"
 
+[[GLPKMathProgInterface]]
+deps = ["Compat", "GLPK", "MathProgBase"]
+git-tree-sha1 = "a7802595ed7e2ab69cd4e496bf2cf8f633082237"
+uuid = "3c7084bd-78ad-589a-b5bb-dbd673274bea"
+version = "0.4.4"
+
 [[IJulia]]
 deps = ["Base64", "Compat", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
 git-tree-sha1 = "38d1ce0fbbefcb67f5ab46f1093cbce0335092e0"
