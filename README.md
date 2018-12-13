@@ -13,6 +13,9 @@ To get started, you first need to install Julia.
 
  - Download and install Julia v1.0.2 from [https://julialang.org/downloads/](https://julialang.org/downloads/).
 
+**Windows 7 Users**: as instructed on the downloads page, you will need to
+install at least version 3.0 of the [Windows Management Framework](https://docs.microsoft.com/en-us/powershell/wmf/overview).
+
 ### Download the materials
 
 Next, you need to download a copy of these materials.
@@ -37,7 +40,6 @@ In the Julia REPL, run the following commands (this may take a little bit of tim
 ```julia
 import Pkg
 Pkg.add("IJulia")
-Pkg.build("IJulia")
 ```
 
 ### Open a Jupyter notebook
@@ -47,6 +49,9 @@ Okay, last step, let's launch a Jupyter notebook! Open a Julia REPL and then run
 using IJulia
 IJulia.notebook(dir="/path/to/tutorial-grid-science-2019")
 ```
+
+Note: we've had some reports that `dir="~"` fails on some NIX machines. Use an
+absolute path instead.
 
 If all goes well, a browser window will open that looks like this:
 
