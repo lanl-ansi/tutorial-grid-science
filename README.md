@@ -1,4 +1,4 @@
-# Grid Science Winter School Tutorial
+# Grid Science Winter School Julia Tutorial
 
 ![logo](assets/logo.jpg)
 
