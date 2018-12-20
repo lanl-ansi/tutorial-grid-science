@@ -5,7 +5,7 @@
 This repository contains materials for the Julia/JuMP tutorial, held at the [Los Alamos National Laboratory
 Grid Science Winter School, January 7-11, 2019](http://www.cvent.com/events/2019-grid-science-winter-school-conference/event-summary-58d3065a0e2947bb8750464ffab634ce.aspx).
 
-This README will walk you through how to install Julia and JuMP.
+This README will walk you through how to install Julia and IJulia.
 
 ### Install Julia
 
