@@ -142,6 +142,12 @@ git-tree-sha1 = "d12425c0187189a6f2fabc5eea9f22f25d365049"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.36.0"
 
+[[GasModels]]
+deps = ["Compat", "InfrastructureModels", "JSON", "JuMP", "Logging", "MathProgBase"]
+git-tree-sha1 = "068469d8db7340a814482d38909599b657408f0c"
+uuid = "5e113713-6c35-5477-b766-e1109486666f"
+version = "0.3.3"
+
 [[IJulia]]
 deps = ["Base64", "Compat", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
 git-tree-sha1 = "38d1ce0fbbefcb67f5ab46f1093cbce0335092e0"
@@ -443,9 +449,9 @@ uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[TimeZones]]
 deps = ["Compat", "EzXML", "Mocking", "Nullables"]
-git-tree-sha1 = "4a4ab113913e19ad62b67e6c5c056509eac00c19"
+git-tree-sha1 = "bd6bd042be107147824eb583aed41d027b69704b"
 uuid = "f269a46b-ccf7-5d73-abea-4c690281aa53"
-version = "0.8.2"
+version = "0.8.4"
 
 [[URIParser]]
 deps = ["Test", "Unicode"]
