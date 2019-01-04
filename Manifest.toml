@@ -206,6 +206,12 @@ git-tree-sha1 = "3bd8e52f7aeb2736a8e1b0d8ae8d01c2c85fea24"
 uuid = "4076af6c-e467-56ae-b986-b466b2749572"
 version = "0.18.5"
 
+[[Juniper]]
+deps = ["Distributed", "JSON", "JuMP", "LinearAlgebra", "Logging", "MathProgBase", "Random", "Statistics", "Test"]
+git-tree-sha1 = "665148432eae537ae6f5fc7653ff776ee7b1dd0d"
+uuid = "2ddba703-00a4-53a7-87a5-e8b9971dde84"
+version = "0.2.3"
+
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Pkg", "Test", "WebIO"]
 git-tree-sha1 = "63e5e0bd2e9923191c30bb1e3d6e4d579155ddfa"
