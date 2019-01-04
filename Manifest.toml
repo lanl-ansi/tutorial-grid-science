@@ -61,6 +61,18 @@ git-tree-sha1 = "fb86fe40cb5b35990e368709bfdc1b46dbb99dac"
 uuid = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 version = "1.1.1"
 
+[[ConicBenchmarkUtilities]]
+deps = ["GZip", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "690b2a38afa79e7063f56f5b5a3290a13c995e55"
+uuid = "e95a7839-07fb-532d-9a0e-071766bb5168"
+version = "0.3.1"
+
+[[ConicNonlinearBridge]]
+deps = ["Compat", "JuMP", "MathProgBase"]
+git-tree-sha1 = "7b1829acd00ab82ed00e932850ab2978a3b7bb5b"
+uuid = "952205b0-75a0-561c-bf54-4eaf7b36f838"
+version = "0.2.1"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
@@ -142,6 +154,12 @@ git-tree-sha1 = "d12425c0187189a6f2fabc5eea9f22f25d365049"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.36.0"
 
+[[GZip]]
+deps = ["Libdl", "Test"]
+git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
+uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
+version = "0.5.0"
+
 [[GasModels]]
 deps = ["Compat", "InfrastructureModels", "JSON", "JuMP", "Logging", "MathProgBase"]
 git-tree-sha1 = "068469d8db7340a814482d38909599b657408f0c"
@@ -205,12 +223,6 @@ deps = ["Calculus", "Compat", "ForwardDiff", "Libdl", "MathProgBase", "Pkg", "Re
 git-tree-sha1 = "3bd8e52f7aeb2736a8e1b0d8ae8d01c2c85fea24"
 uuid = "4076af6c-e467-56ae-b986-b466b2749572"
 version = "0.18.5"
-
-[[Juniper]]
-deps = ["Distributed", "JSON", "JuMP", "LinearAlgebra", "Logging", "MathProgBase", "Random", "Statistics", "Test"]
-git-tree-sha1 = "665148432eae537ae6f5fc7653ff776ee7b1dd0d"
-uuid = "2ddba703-00a4-53a7-87a5-e8b9971dde84"
-version = "0.2.3"
 
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Pkg", "Test", "WebIO"]
@@ -315,6 +327,12 @@ deps = ["Random", "Serialization", "Test"]
 git-tree-sha1 = "85619a3f3e17bb4761fe1b1fd47f0e979f964d5b"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 version = "1.0.2"
+
+[[Pavito]]
+deps = ["Compat", "ConicBenchmarkUtilities", "ConicNonlinearBridge", "JuMP", "Logging", "MathProgBase"]
+git-tree-sha1 = "3414bff762e020e6ffd220af17e17435e78673c7"
+uuid = "cd433a01-47d1-575d-afb7-6db927ee8d8f"
+version = "0.1.2"
 
 [[Pidfile]]
 deps = ["FileWatching", "Test"]
