@@ -162,9 +162,9 @@ version = "0.5.0"
 
 [[GasModels]]
 deps = ["Compat", "InfrastructureModels", "JSON", "JuMP", "Logging", "MathProgBase"]
-git-tree-sha1 = "068469d8db7340a814482d38909599b657408f0c"
+git-tree-sha1 = "ae2a5783b18439b81c8c69d34a81b3cc714a44be"
 uuid = "5e113713-6c35-5477-b766-e1109486666f"
-version = "0.3.3"
+version = "0.3.4"
 
 [[IJulia]]
 deps = ["Base64", "Compat", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
