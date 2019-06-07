@@ -1,4 +1,5 @@
 [deps]
+Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
 GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 GasModels = "5e113713-6c35-5477-b766-e1109486666f"
 IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
