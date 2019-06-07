@@ -11,7 +11,7 @@ This README will walk you through how to install Julia and IJulia.
 
 To get started, you first need to install Julia.
 
- - Download and install Julia v1.0.2 from [https://julialang.org/downloads/](https://julialang.org/downloads/).
+ - Download and install Julia v1.1 from [https://julialang.org/downloads/](https://julialang.org/downloads/).
 
 **Windows 7 Users**: as instructed on the downloads page, you will need to
 install at least version 3.0 of the [Windows Management Framework](https://docs.microsoft.com/en-us/powershell/wmf/overview).
