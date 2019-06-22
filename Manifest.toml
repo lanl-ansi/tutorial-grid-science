@@ -39,6 +39,12 @@ git-tree-sha1 = "f60954495a7afcee4136f78d1d60350abd37a409"
 uuid = "49dc2e85-a5d0-5ad3-a950-438e2897f1b9"
 version = "0.4.1"
 
+[[Cbc]]
+deps = ["BinaryProvider", "Libdl", "MathOptInterface", "MathProgBase", "SparseArrays", "Test"]
+git-tree-sha1 = "5c3f8bd00d1f57d5a0a7ed40e81d7be9a98efb4a"
+uuid = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
+version = "0.6.0"
+
 [[ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
 git-tree-sha1 = "10050a24b09e8e41b951e9976b109871ce98d965"
@@ -64,22 +70,10 @@ uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
 version = "2.1.0"
 
 [[Conda]]
-deps = ["Compat", "JSON", "VersionParsing"]
-git-tree-sha1 = "b625d802587c2150c279a40a646fba63f9bd8187"
+deps = ["JSON", "VersionParsing"]
+git-tree-sha1 = "9a11d428dcdc425072af4aea19ab1e8c3e01c032"
 uuid = "8f4d0f93-b110-5947-807f-2305c1781a2d"
-version = "1.2.0"
-
-[[ConicBenchmarkUtilities]]
-deps = ["GZip", "LinearAlgebra", "SparseArrays", "Test"]
-git-tree-sha1 = "690b2a38afa79e7063f56f5b5a3290a13c995e55"
-uuid = "e95a7839-07fb-532d-9a0e-071766bb5168"
-version = "0.3.1"
-
-[[ConicNonlinearBridge]]
-deps = ["Compat", "JuMP", "MathProgBase"]
-git-tree-sha1 = "7b1829acd00ab82ed00e932850ab2978a3b7bb5b"
-uuid = "952205b0-75a0-561c-bf54-4eaf7b36f838"
-version = "0.2.1"
+version = "1.3.0"
 
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
@@ -149,35 +143,29 @@ git-tree-sha1 = "b12093a67c3007b69d5403625d1920d59c16ac61"
 uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 version = "0.10.0"
 
-[[GLPKMathProgInterface]]
-deps = ["Compat", "GLPK", "MathProgBase"]
-git-tree-sha1 = "a7802595ed7e2ab69cd4e496bf2cf8f633082237"
-uuid = "3c7084bd-78ad-589a-b5bb-dbd673274bea"
-version = "0.4.4"
-
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "9dff2d231311da78648abfa3287e3458a578d2f8"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.40.0"
 
-[[GZip]]
-deps = ["Libdl", "Test"]
-git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
-uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
-version = "0.5.0"
-
 [[GasModels]]
-deps = ["Compat", "InfrastructureModels", "JSON", "JuMP", "LinearAlgebra", "MathProgBase", "Memento"]
-git-tree-sha1 = "70f2e851e8234832ce29a283e247e56096ce6319"
+deps = ["Compat", "InfrastructureModels", "JSON", "JuMP", "LinearAlgebra", "MathOptInterface", "Memento"]
+git-tree-sha1 = "f763a4c7dc69390885bcb7034c80c5476de98f9c"
 uuid = "5e113713-6c35-5477-b766-e1109486666f"
-version = "0.3.5"
+version = "0.4.0"
 
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
-git-tree-sha1 = "05796e9ac5a8fb8adfdcdf842fb8737d1cb5924e"
+git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
 uuid = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
-version = "0.7.4"
+version = "0.7.5"
+
+[[HTTP]]
+deps = ["Base64", "Dates", "IniFile", "MbedTLS", "Sockets"]
+git-tree-sha1 = "854fad2a2b9cc6678f70ed15a65fc7e572056d39"
+uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+version = "0.8.2"
 
 [[IJulia]]
 deps = ["Base64", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
@@ -187,9 +175,15 @@ version = "1.18.1"
 
 [[InfrastructureModels]]
 deps = ["JuMP", "Memento"]
-git-tree-sha1 = "6f8198d3088666e7638a58914dc3f3be8504b0cf"
+git-tree-sha1 = "131d2d24a2a0d404f59dceab2fb8f8cca2aadce5"
 uuid = "2030c09a-7f63-5d83-885d-db604e0e9cc0"
-version = "0.0.16"
+version = "0.2.1"
+
+[[IniFile]]
+deps = ["Test"]
+git-tree-sha1 = "098e4d2c533924c921f9f9847274f2ad89e018b8"
+uuid = "83e8ac13-25f8-5344-8a64-a9f2b223428f"
+version = "0.5.0"
 
 [[Interact]]
 deps = ["CSSUtil", "InteractBase", "JSON", "Knockout", "Observables", "OrderedCollections", "Reexport", "Test", "WebIO", "Widgets"]
@@ -198,10 +192,10 @@ uuid = "c601a237-2ae4-5e1e-952c-7a85b0c7eef1"
 version = "0.10.2"
 
 [[InteractBase]]
-deps = ["Base64", "CSSUtil", "Colors", "Dates", "JSExpr", "JSON", "Knockout", "Observables", "OrderedCollections", "Random", "Test", "WebIO", "Widgets"]
-git-tree-sha1 = "83fc45f21bfec97e5cd56e790f6945497ab0f095"
+deps = ["Base64", "CSSUtil", "Colors", "Dates", "JSExpr", "JSON", "Knockout", "Observables", "OrderedCollections", "Random", "WebIO", "Widgets"]
+git-tree-sha1 = "752e330aef74a8a01968cce0a361a4525b944471"
 uuid = "d3863d7c-f0c8-5437-a7b4-3ae773c01009"
-version = "0.10.1"
+version = "0.10.2"
 
 [[InteractiveUtils]]
 deps = ["Markdown"]
@@ -232,11 +226,16 @@ uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.20.0"
 
 [[JuMP]]
-deps = ["Calculus", "Compat", "ForwardDiff", "Libdl", "MathProgBase", "Pkg", "ReverseDiffSparse", "Serialization"]
-git-tree-sha1 = "3bd8e52f7aeb2736a8e1b0d8ae8d01c2c85fea24"
-pinned = true
+deps = ["Calculus", "DataStructures", "ForwardDiff", "LinearAlgebra", "MathOptInterface", "NaNMath", "Random", "SparseArrays", "Statistics"]
+git-tree-sha1 = "5df42febdee8ac7db9de66c712e439a6ff06459d"
 uuid = "4076af6c-e467-56ae-b986-b466b2749572"
-version = "0.18.5"
+version = "0.19.1"
+
+[[Juniper]]
+deps = ["Distributed", "JSON", "JuMP", "LinearAlgebra", "MathOptInterface", "Random", "Statistics"]
+git-tree-sha1 = "e26bd40ede7b7fe77097cc11704941b01e44efe4"
+uuid = "2ddba703-00a4-53a7-87a5-e8b9971dde84"
+version = "0.4.2"
 
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Pkg", "Test", "WebIO"]
@@ -336,12 +335,6 @@ git-tree-sha1 = "c4c13474d23c60d20a67b217f1d7f22a40edf8f1"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 version = "1.1.0"
 
-[[Pavito]]
-deps = ["Compat", "ConicBenchmarkUtilities", "ConicNonlinearBridge", "JuMP", "Logging", "MathProgBase"]
-git-tree-sha1 = "3414bff762e020e6ffd220af17e17435e78673c7"
-uuid = "cd433a01-47d1-575d-afb7-6db927ee8d8f"
-version = "0.1.2"
-
 [[Pidfile]]
 deps = ["FileWatching", "Test"]
 git-tree-sha1 = "1ffd82728498b5071cde851bbb7abd780d4445f3"
@@ -371,10 +364,10 @@ uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 version = "0.25.1"
 
 [[PowerModels]]
-deps = ["InfrastructureModels", "JSON", "JuMP", "LinearAlgebra", "Memento", "SparseArrays"]
-git-tree-sha1 = "ce2034b3474571552c4dd67df75084c626acad4e"
+deps = ["InfrastructureModels", "JSON", "JuMP", "LinearAlgebra", "MathOptInterface", "Memento", "SparseArrays"]
+git-tree-sha1 = "c9d4280b0cd1cd6dc10bca03d8c17950a1f90e8a"
 uuid = "c36e90e8-916a-50a6-bd94-075b64ef4655"
-version = "0.9.8"
+version = "0.11.1"
 
 [[Printf]]
 deps = ["Unicode"]
@@ -405,12 +398,6 @@ deps = ["Test"]
 git-tree-sha1 = "f6fbf4ba64d295e146e49e021207993b6b48c7d1"
 uuid = "ae029012-a4dd-5104-9daa-d747884805df"
 version = "0.5.2"
-
-[[ReverseDiffSparse]]
-deps = ["Calculus", "Compat", "DataStructures", "ForwardDiff", "MathProgBase", "NaNMath"]
-git-tree-sha1 = "cbbc2c710abea5cfe71459ce4711d80a212aac5a"
-uuid = "89212889-6d3f-5f97-b412-7825138f6c9c"
-version = "0.8.6"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -454,10 +441,10 @@ uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
 version = "0.7.2"
 
 [[StaticArrays]]
-deps = ["InteractiveUtils", "LinearAlgebra", "Random", "Statistics", "Test"]
-git-tree-sha1 = "3841b39ed5f047db1162627bf5f80a9cd3e39ae2"
+deps = ["LinearAlgebra", "Random", "Statistics"]
+git-tree-sha1 = "db23bbf50064c582b6f2b9b043c8e7e98ea8c0c6"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "0.10.3"
+version = "0.11.0"
 
 [[Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
@@ -511,10 +498,16 @@ uuid = "81def892-9a0e-5fdd-b105-ffc91e053289"
 version = "1.1.3"
 
 [[WebIO]]
-deps = ["AssetRegistry", "Base64", "Compat", "Distributed", "FunctionalCollections", "JSON", "Logging", "Observables", "Random", "Requires", "Sockets", "Test", "UUIDs", "Widgets"]
-git-tree-sha1 = "125dc746e5b36424c6a7e694889a7f3d434a160a"
+deps = ["AssetRegistry", "Base64", "Compat", "Distributed", "FunctionalCollections", "JSON", "Logging", "Observables", "Random", "Requires", "Sockets", "UUIDs", "WebSockets", "Widgets"]
+git-tree-sha1 = "548dc86c5ecf65e56782b757ee477a21beb9466e"
 uuid = "0f1e0344-ec1d-5b48-a673-e5cf874b6c29"
-version = "0.8.1"
+version = "0.8.4"
+
+[[WebSockets]]
+deps = ["Base64", "Dates", "Distributed", "HTTP", "Logging", "Random", "Sockets", "Test"]
+git-tree-sha1 = "13f763d38c7a05688938808b49cb29b18b60c8c8"
+uuid = "104b5d7c-a370-577a-8038-80a2059c5097"
+version = "1.5.2"
 
 [[Widgets]]
 deps = ["Colors", "Dates", "Observables", "OrderedCollections", "Test"]
