@@ -11,7 +11,7 @@ This README will walk you through how to install Julia and IJulia.
 
 To get started, you first need to install Julia.
 
- - Download and install Julia v1.3 from [https://julialang.org/downloads/](https://julialang.org/downloads/).
+ - Download and install Julia v1.5 from [https://julialang.org/downloads/](https://julialang.org/downloads/).
 
 **Windows 7 Users**: as instructed on the downloads page, you will need to
 install at least version 3.0 of the [Windows Management Framework](https://docs.microsoft.com/en-us/powershell/wmf/overview).
@@ -23,9 +23,9 @@ Next, you need to download a copy of these materials.
  - If you have `git`
 installed, (after `cd`'ing to an appropriate directory) run
 ```
-git clone https://github.com/lanl-ansi/tutorial-grid-science-2019
+git clone https://github.com/lanl-ansi/tutorial-grid-science
 ```
- - If you don't have `git` installed (i.e., the above command fails), [download this zip file](https://github.com/lanl-ansi/tutorial-grid-science-2019/archive/master.zip). Once downloaded, unzip it to an appropriate location.
+ - If you don't have `git` installed (i.e., the above command fails), [download this zip file](https://github.com/lanl-ansi/tutorial-grid-science/archive/master.zip). Once downloaded, unzip it to an appropriate location.
 
 ### Open Julia
 
@@ -38,8 +38,7 @@ Now open Julia, either by typing `julia` at a terminal, or from where ever you i
 Now we need to install [Jupyter](http://jupyter.org/).
 In the Julia REPL, run the following commands (this may take a little bit of time):
 ```julia
-import Pkg
-Pkg.add("IJulia")
+] add IJulia
 ```
 
 ### Open a Jupyter notebook
@@ -47,7 +46,7 @@ Pkg.add("IJulia")
 Okay, last step, let's launch a Jupyter notebook! Open a Julia REPL and then run:
 ```julia
 using IJulia
-IJulia.notebook(dir="/path/to/tutorial-grid-science-2019")
+IJulia.notebook(dir="/path/to/tutorial-grid-science")
 ```
 
 Note: we've had some reports that `dir="~"` fails on some NIX machines. Use an
